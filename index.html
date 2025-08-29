@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deine Marke</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">Deine Marke</a>
+      <nav class="nav" id="nav">
+        <a href="#about">Über mich</a>
+        <a href="#services">Angebot</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Hier etwas einsetzen</h1>
+      <p>Eine kurze Zeile, die sowohl auf dem Handy als auch am Computer funktioniert.</p>
+      <a href="#contact" class="btn">Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Über mich</h2>
+      <p>Hier etwas über deine Philosophie oder Geschichte einfügen.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2>Angebot</h2>
+      <div class="grid">
+        <div class="card service"
+          data-more="Mehr Details zu Angebot Eins. Hier kannst du den Ablauf oder die Vorteile erklären.">
+          <h3>Angebot Eins</h3>
+          <p>Zum Aufklappen klicken.</p>
+        </div>
+        <div class="card service"
+          data-more="Mehr Details zu Angebot Zwei. Füge praktische Beispiele oder Ergebnisse hinzu.">
+          <h3>Angebot Zwei</h3>
+          <p>Zum Aufklappen klicken.</p>
+        </div>
+        <div class="card service" data-more="Mehr Details zu Angebot Drei. Hier überzeugst du die Besucher*innen.">
+          <h3>Angebot Drei</h3>
+          <p>Zum Aufklappen klicken.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Galerie</h2>
+      <div class="grid gallery">
+        <div class="gallery-item">
+          <img src="temp.jpeg" alt="Galerie Bild" class="gallery-img" />
+        </div>
+        <div class="gallery-item">
+          <img src="temp2.jpg" alt="Galerie Bild" class="gallery-img" />
+        </div>
+        <div class="gallery-item">
+          <img src="temp3.jpg" alt="Galerie Bild" class="gallery-img" />
+        </div>
+        <div class="gallery-item">Bild 4</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <form id="contact-form" class="contact-form">
+        <label>Name
+          <input type="text" name="from_name" required />
+        </label>
+        <label>E-Mail
+          <input type="email" name="from_email" required />
+        </label>
+        <label>Nachricht
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit" class="btn">Absenden</button>
+      </form>
+      <div id="form-message" style="margin-top:1rem;"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Deine Marke. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <!-- Add modal for enlarged image just before </body> -->
+  <div id="img-modal" class="img-modal" style="display:none;">
+    <span id="close-img-modal" class="img-modal-close">&times;</span>
+    <img id="img-modal-content" class="img-modal-content" src="" alt="Großes Bild" />
+  </div>
+  <div id="notification" class="notification"></div>
+</body>
+
+</html>
